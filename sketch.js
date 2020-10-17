@@ -51,7 +51,7 @@ function draw() {
   bow.y=mouseY;
   
   //shooting arrows
-  if(touches>World.x)
+  if(touches>World.x||keyDown("space"))
   {
     arrowhit.play();  
     shooting_arrows();
